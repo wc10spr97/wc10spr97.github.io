@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page Street Garden | Accessible Community Garden + Wellness Space</title>
+  <meta name="description" content="Phase 1 mockup for Page Street Garden, an accessible community garden and wellness space.">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <a class="brand" href="/" data-link aria-label="Page Street Garden home">
+      <span class="brand-mark" aria-hidden="true">PSG</span>
+      <span>
+        <strong>Page Street Garden</strong>
+        <small>Community garden + wellness space</small>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="/about" data-link>About</a>
+      <a href="/programs" data-link>Programs</a>
+      <a href="/events" data-link>Events</a>
+      <a href="/volunteer" data-link>Volunteer</a>
+      <a href="/gallery" data-link>Gallery</a>
+      <a href="/contact" data-link>Contact</a>
+      <a href="/accessibility" data-link>Accessibility</a>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1"></main>
+
+  <aside class="access-toolbar" aria-label="Accessibility toolbar">
+    <button class="tool-button" type="button" data-size="minus" aria-label="Decrease text size">A-</button>
+    <button class="tool-button" type="button" data-size="plus" aria-label="Increase text size">A+</button>
+    <button class="tool-button" type="button" data-theme="light" aria-label="Use light theme">Light</button>
+    <button class="tool-button" type="button" data-theme="dark" aria-label="Use dark theme">Dark</button>
+    <button class="tool-button" type="button" data-theme="contrast" aria-label="Use high contrast theme">Contrast</button>
+    <button class="tool-button wide" type="button" data-open-access>Options</button>
+  </aside>
+
+  <section class="access-drawer" id="accessDrawer" aria-labelledby="accessTitle" aria-hidden="true">
+    <div class="drawer-head">
+      <div>
+        <p class="eyebrow">Accessibility options</p>
+        <h2 id="accessTitle">Tune the visit</h2>
+      </div>
+      <button class="icon-button" type="button" data-close-access aria-label="Close accessibility options">X</button>
+    </div>
+    <div class="drawer-grid">
+      <button type="button" data-size="minus">A-</button>
+      <button type="button" data-size="reset">A</button>
+      <button type="button" data-size="plus">A+</button>
+    </div>
+    <label class="toggle-row"><input type="radio" name="theme" value="light" checked> Light mode</label>
+    <label class="toggle-row"><input type="radio" name="theme" value="dark"> Dark mode</label>
+    <label class="toggle-row"><input type="radio" name="theme" value="contrast"> High contrast</label>
+    <button class="read-button" type="button" data-read>Read this page aloud</button>
+    <p class="drawer-note">Keyboard focus is highlighted with a gold outline. Controls keep 44px minimum target sizing and work at enlarged text settings.</p>
+  </section>
+
+  <footer class="site-footer">
+    <div>
+      <strong>Page Street Garden</strong>
+      <p>Phase 1 website mockup for a public presence that can grow into a community impact platform.</p>
+    </div>
+    <a href="/accessibility" data-link>Accessibility statement</a>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>
