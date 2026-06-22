@@ -287,6 +287,8 @@ function setTextSize(action) {
 
 function openDrawer() {
   const drawer = document.querySelector("#accessDrawer");
+  drawer.hidden = false;
+  drawer.removeAttribute("inert");
   drawer.classList.add("is-open");
   drawer.setAttribute("aria-hidden", "false");
   document.body.classList.add("drawer-open");
@@ -296,6 +298,8 @@ function closeDrawer() {
   const drawer = document.querySelector("#accessDrawer");
   drawer.classList.remove("is-open");
   drawer.setAttribute("aria-hidden", "true");
+  drawer.setAttribute("inert", "");
+  drawer.hidden = true;
   document.body.classList.remove("drawer-open");
 }
 

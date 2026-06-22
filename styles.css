@@ -565,6 +565,10 @@ figcaption {
   transition: transform .22s ease;
 }
 
+.access-drawer[hidden] {
+  display: none;
+}
+
 .access-drawer.is-open {
   transform: translateX(0);
 }
